@@ -19,7 +19,7 @@ Your challenge is to build out this page and get it looking as close to the desi
 
 ## Links
 
-- Solution URL: --
+- Solution URL: https://www.frontendmentor.io/solutions/css-chat-illustration-responsive-solution-Nxl8uTY771
 - Live Site URL: https://raink31.github.io/020-CSS-Chat-illustration/
 
 
