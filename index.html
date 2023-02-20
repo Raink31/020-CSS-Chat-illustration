@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | CSS Chat illustration</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="top-section">
+                <div class="encoche"></div>
+                <div class="conversation-info">
+                    <div class="profil">
+                        <a href="#" aria-label="return to conversations"><img src="assets/images/nav-arrow-left.svg" alt="return button" id="return-button"></a>
+                        <a href="#" aria-label="see the profile" id="profile-button"><img src="assets/images/avatar.jpg" alt="Samuel's avatar" id="profile-pic"></a>
+                        <div class="profil-informations">
+                            <h1>Samuel Green</h1>
+                            <p>Available to Walk</p>
+                        </div>
+                    </div>
+                    <a id="menu-button" href="#" aria-label="show the menu"><img src="assets/images/Menu.svg" alt="menu" id="menu"></a>
+                </div>
+            </div>
+            <div class="sms-left">
+                <p>That sounds great. I'd be happy to discuss more.</p>
+            </div>
+            <div class="sms-left">
+                <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+            <div class="dog-photos">
+                <img src="assets/images/dog-image-1.jpg" alt="">
+                <img src="assets/images/dog-image-2.jpg" alt="">
+                <img src="assets/images/dog-image-3.jpg" alt="">
+            </div>
+            <div class="sms-right">
+                <p>Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div class="sms-right">
+                <p>Can you make it?</p>
+            </div>
+            <div class="sms-left">
+                <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            </div>
+            <form action="#">
+                <div class="price-selector">
+                    <div class="selector">
+                        <input type="radio">
+                        <p>30 minute walk</p>
+                    </div>
+                    <p class="price">
+                        $29
+                    </p>
+                </div>
+                <div class="price-selector">
+                    <div class="selector">
+                        <input type="radio">
+                        <p>1 hour walk</p>
+                    </div>
+                    <p class="price">
+                        $49
+                    </p>
+                </div>
+                <div class="message-and-submit">
+                    <input type="text">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <section class="app-description">
+            <h2>Simple booking</h2>
+            <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+            discuss arrangements and make bookings. Once the walk has been completed you can rate 
+            your walker and book again all through the chat.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,202 @@
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* Style guide roots */
+
+:root{
+    /* TEXT */
+
+    /* sub-heading at the top of the app UI */
+    --pale-violet: hsl(276, 100%, 81%); 
+    /* chat on the left */
+    --moderate-violet: hsl(276, 55%, 52%);
+    /* chat on the right */
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    /* placeholder text */
+    --grayish-blue: hsl(206, 6%, 79%);
+    /* main heading */
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    /* paragraph */
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+
+    /* GRADIENTS */
+
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* SECONDARY */
+
+    /* app background */
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    /* radio button outline */
+    --very-light-magenta: hsl(289, 100%, 72%);
+}
+
+/* CSS Style guide */
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--very-dark-cyan);
+    background-color: hsl(0, 0%, 97%);
+    position: relative;
+}
+
+main, 
+header, 
+footer {
+    max-width: 767.99px;
+    width: 100%;
+}
+
+/* Body BG */
+
+body::before{
+    content: "";
+    height: 50vh;
+    width: 50vw;
+    background: linear-gradient(180deg, var(--light-magenta), var(--light-violet));
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 1000px 0;
+}
+
+body::after {
+    content: "";
+    height: 50vh;
+    width: 50vw;
+    background-color: #efecf3;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    border-radius: 1000px 0 0 0;
+}
+
+/* Main & phone body */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.container{
+    width: 70%;
+    background-color: grey;
+    border: 10px solid white;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.212);
+}
+
+.encoche {
+    margin: auto;
+    width: 60%;
+    height: 20px;
+    background: white;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: .5rem;
+}
+
+/* Top-section */
+
+.top-section{
+    background: linear-gradient(-90deg, var(--light-magenta), var(--light-violet));
+}
+
+.container img{
+    width: 15%;
+}
+
+#menu{
+    width: 2%;
+}
+
+.conversation-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+    gap: .5rem;
+}
+
+.profil img{
+    width: 100%;
+}
+
+.profil-informations h1, .profil-informations p{
+    display: inline-block;
+    width: max-content;
+}
+
+.profil h1{
+    font-size: .9em;
+    color: white;
+    font-weight: 500;
+}
+
+.profil p{
+    color: white;
+    opacity: 60%;
+    font-size: .7em;
+
+}
+
+#menu-button{
+    flex: 1;
+    width: 10px;
+}
+
+#return-button{
+    width: 100%;
+}
+
+#profile-pic{
+    width: 100%;
+}
+
+#profile-button{
+    width: 20%;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+#menu{
+    margin: 0;
+}
+
+
+
+
+
+
